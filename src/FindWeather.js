@@ -13,7 +13,7 @@ class FindWeather extends Component {
     // When button is clicked, take the input and call the API to return weather
     // Also clear the state of inputText so the input field is reset
     console.log("fetch call parameter: " + input);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=ce2f30aab63d88137a39fc6ba70c3bdc`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=`)
     .then(response => response.json())
     .then(json => {
       let weather = json;
